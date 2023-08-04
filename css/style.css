@@ -1,149 +1,221 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    /* border: 2px solid rgb(52, 209, 52); */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 2px solid rgb(52, 209, 52); */
 }
 
-/* font-family: 'Ubuntu', sans-serif;
+:root {
+  /* Primary colors */
+  --Light-red-CTA-text: hsl(356, 100%, 66%);
+  --Very-light-red-CTA-hover-background: hsl(355, 100%, 74%);
+  --Very-dark-blue-headings: hsl(208, 49%, 24%);
 
-*/
+  /*** NEUTRAL COLORS ****/
+  --White-text: hsl(0, 0%, 100%);
+  --Grayish-blue-footer-text: hsl(240, 2%, 79%);
+  --Very-dark-grayish-blue-body-copy: hsl(207, 13%, 34%);
+  --Very-dark-black-blue-footer-background: hsl(240, 10%, 16%);
+
+  /* ### Gradient */
+  /* Background gradient - Intro/CTA mobile nav: */
+  --Very-light-red: hsl(13, 100%, 72%);
+  --Light-red: hsl(353, 100%, 62%);
+
+  /* Background gradient - body: */
+
+  --Very-dark-gray-blue: hsl(237, 17%, 21%);
+  --Very-dark-desaturated-blue: hsl(237, 23%, 32%);
+}
+
+/* font-family: 'Ubuntu', sans-serif;*/
 a,
 li {
-    text-decoration: none;
-    list-style-type: none;
-    color: white;
-    margin: 10px;
+  text-decoration: none;
+  list-style-type: none;
+  color: white;
+  margin: 8px;
 }
 
 body {
-    font-family: 'Overpass', sans-serif;
-    overflow-x: hidden;
+  font-family: "Overpass", sans-serif;
+  /* overflow-x: hidden; */
 }
 
+
+/* HEADER STYLES */
+
 header {
-    /* height: 80vh; */
-    background-color: rgb(209, 41, 41);
-    padding: 2rem;
-    color: white;
-    border-radius: 0 0 0 60px;
-    margin-bottom: 5rem;
+  background-image: url("../images/bg-pattern-intro-desktop.svg");
+  background-image: url("../images/bg-pattern-intro-desktop.svg"),
+    linear-gradient(to left, var(--Light-red), var(--Very-light-red));
+  background-repeat: no-repeat, no-repeat;
+  background-size: 200%, cover;
+  background-position: -200px, 0;
+  padding: 2rem;
+  color: white;
+  border-radius: 0 0 0 60px;
+  margin-bottom: 5rem;
 }
 
 nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 3rem;
+  max-width: 1400px;
+  /* margin: 0 auto; */
+}
+
+.logo-and-nav {
+  display: flex;
 }
 
 .nav-hover {
-    display: none;
+  display: none;
 }
 
 ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 2rem;
+}
+.nav-button img {
+  margin-left: 5px;
+}
+
+.nav-form {
+  margin: 0 2rem 0 0;
+}
+header button {
+  cursor: pointer;
+  border: none;
+  padding: 12px 20px;
+  margin: 5px;
+  background-color: var(--White-text);
+  color: var(--Light-red-CTA-text);
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+header button:hover {
+  background-color: var(--Very-light-red-CTA-hover-background);
+  color: var(--White-text);
+}
+
+.transparent-btn {
+  border: none;
+  background-color: transparent;
+  color: white;
+}
+
+.transparent-btn:hover {
+  background-color: white;
+  color: red;
+}
+.border {
+  border: 1px solid white;
 }
 
 .showcase {
-    font-size: 1.5rem;
-    text-align: center;
-    margin: 4rem 2rem;
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 4rem 2rem;
 }
 
-h1 {
-    font-weight: bolder;
-    margin: 2rem 0;
+.showcase h1 {
+  font-size: 3.5rem;
+  font-weight: bolder;
+  margin-top: 5rem;
 }
 
-p {
-    font-size: 16px;
+.showcase p {
+  margin: 2rem;
+  font-size: 16px;
 }
 
 .showcase-buttons {
-    margin: 2rem;
+  margin: 2rem;
 }
 
 
-
-.Designed{
-    padding: 2rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+/* SECTION STYLES */
+.Designed {
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
 }
 .Designed-header {
-    text-align: center;
+  text-align: center;
 }
 
 .Designed-right,
-.Designed-left{
-    position: relative;
-    width: 50%;
+.Designed-left {
+  position: relative;
+  width: 50%;
 }
 
-.Designed-right img{
-    width: 100%;
-    position: relative;
-    left: 200px;
+.Designed-right img {
+  width: 100%;
+  position: relative;
+  left: 200px;
 }
 
-
-
-.State-art{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    background-image: url('../images/bg-pattern-circles.svg');
-    background-repeat: no-repeat;
-    background-position: -200px -550px;
-    background-color:  hsl(237, 17%, 21%);
-    height: 68vh;
-    border-radius: 0 100px;
-    padding: 2rem;
-    margin: 5rem 0;
-
+.State-art {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-image: url("../images/bg-pattern-circles.svg");
+  background-repeat: no-repeat;
+  background-position: -200px -550px;
+  background-color: hsl(237, 17%, 21%);
+  height: 68vh;
+  border-radius: 0 100px;
+  padding: 2rem;
+  margin: 5rem 0;
 }
 
-.state-art-img{
-    width: 50%;
-    position: relative;
-    left: 50px;
+.state-art-img {
+  width: 50%;
+  position: relative;
+  left: 50px;
 }
 
-.State-art article{
-    width: 50%;
+.State-art article {
+  width: 50%;
 }
 
-.section-2{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    /* height: 100vh; */
-
+.section-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
 }
 
 .section-2-left,
-.section-2-right{
-    width: 50%;
+.section-2-right {
+  width: 50%;
 }
 
-.section-2-left img{
-    /* width: 100%; */
-    position: relative;
-    right: 300px;
+.section-2-left img {
+  /* width: 100%; */
+  position: relative;
+  right: 300px;
 }
 
 .attribution {
-    font-size: 11px;
-    text-align: center;
+  font-size: 11px;
+  text-align: center;
 }
 .attribution a {
-    color: hsl(228, 45%, 44%);
+  color: hsl(228, 45%, 44%);
 }
