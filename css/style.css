@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 2px solid rgb(52, 209, 52); */
+}
+
+/* font-family: 'Ubuntu', sans-serif;
+
+*/
+a,
+li {
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+    margin: 10px;
+}
+
+body {
+    font-family: 'Overpass', sans-serif;
+    overflow-x: hidden;
+}
+
+header {
+    /* height: 80vh; */
+    background-color: rgb(209, 41, 41);
+    padding: 2rem;
+    color: white;
+    border-radius: 0 0 0 60px;
+    margin-bottom: 5rem;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-hover {
+    display: none;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.showcase {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 4rem 2rem;
+}
+
+h1 {
+    font-weight: bolder;
+    margin: 2rem 0;
+}
+
+p {
+    font-size: 16px;
+}
+
+.showcase-buttons {
+    margin: 2rem;
+}
+
+
+
+.Designed{
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.Designed-header {
+    text-align: center;
+}
+
+.Designed-right,
+.Designed-left{
+    position: relative;
+    width: 50%;
+}
+
+.Designed-right img{
+    width: 100%;
+    position: relative;
+    left: 200px;
+}
+
+
+
+.State-art{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-image: url('../images/bg-pattern-circles.svg');
+    background-repeat: no-repeat;
+    background-position: -200px -550px;
+    background-color:  hsl(237, 17%, 21%);
+    height: 68vh;
+    border-radius: 0 100px;
+    padding: 2rem;
+    margin: 5rem 0;
+
+}
+
+.state-art-img{
+    width: 50%;
+    position: relative;
+    left: 50px;
+}
+
+.State-art article{
+    width: 50%;
+}
+
+.section-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+
+}
+
+.section-2-left,
+.section-2-right{
+    width: 50%;
+}
+
+.section-2-left img{
+    /* width: 100%; */
+    position: relative;
+    right: 300px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
