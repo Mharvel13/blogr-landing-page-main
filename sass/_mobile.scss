@@ -1,0 +1,85 @@
+@media screen and (max-width: 800px) {
+    nav {
+        display: none;
+        .logo-and-nav {
+            display: none;
+        }
+    }
+
+    .showcase {
+        width: 100%;
+        margin: 0 auto;
+        h1 {
+            font-size: 1.5rem;
+        }
+    }
+
+
+    .Designed {
+        flex-direction: column-reverse;
+        margin-bottom: 10rem;
+    }
+
+    .Designed-left,
+    .Designed-right {
+        width: 100%;
+    }
+
+    .Designed-left {
+        article {
+            margin: 0px;
+        }
+        h3,
+        p {
+            text-align: center;
+            width: 100%;
+        }
+    }
+
+    .Designed-right {
+        img {
+            width: 100%;
+        }
+    }
+    .State-art {
+        flex-direction: column;
+        height: auto;
+        margin-top: 5rem;
+        position: relative;
+
+        article {
+            width: 100%;
+            text-align: center;
+            margin-top: -5rem;
+        }
+        img {
+            width: 100%;
+            position: relative;
+            bottom: 150px;
+        }
+    }
+
+    .section-2 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .section-2-left,
+    .section-2-right {
+        width: 100%;
+    }
+
+    .section-2-left img {
+        width: 100%;
+        left: 0;
+    }
+
+    footer{
+        flex-direction: column;
+        text-align: center;
+
+        img{
+            margin: 3rem 0;
+        }
+    }
+}

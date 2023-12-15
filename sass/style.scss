@@ -1,0 +1,255 @@
+@import "_base-config";
+
+@import "mixin";
+
+/* HEADER STYLES */
+
+header {
+    background-image: url("../images/bg-pattern-intro-desktop.svg"),
+        linear-gradient(to left, var(--Light-red), var(--Very-light-red));
+    background-repeat: no-repeat, no-repeat;
+    background-size: 250%, cover;
+    background-position: -500px, 0;
+    padding: 4rem;
+    color: white;
+    border-radius: 0 0 0 60px;
+    width: 100%;
+
+    button {
+        cursor: pointer;
+        border: none;
+        padding: 12px 20px;
+        margin: 5px;
+        background-color: var(--White-text);
+        color: var(--Light-red-CTA-text);
+        border-radius: 20px;
+        font-size: 0.9rem;
+        font-weight: bold;
+    }
+    button:hover {
+        background-color: var(--Very-light-red-CTA-hover-background);
+        color: var(--White-text);
+    }
+}
+
+nav {
+    @include Flex;
+    justify-content: space-between;
+    margin: 0 2rem;
+
+    .logo-and-nav {
+        @include Flex;
+    }
+
+    .nav-hover {
+        display: none;
+    }
+
+    ul {
+        @include Flex;
+        justify-content: space-between;
+        margin-left: 2rem;
+    }
+
+    .nav-button img {
+        margin-left: 5px;
+    }
+
+    .nav-form {
+        margin: 0 2rem 0 0;
+    }
+}
+
+.transparent-btn {
+    border: none;
+    background-color: transparent;
+    color: var(--White-text);
+}
+
+.transparent-btn:hover {
+    background-color: var(--White-text);
+    color: var(--Light-red-CTA-text);
+}
+
+.border {
+    border: 1px solid var(--White-text);
+}
+
+.showcase {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 5rem 2.5rem;
+
+    h1 {
+        font-size: 3.5rem;
+        font-weight: bolder;
+        margin-top: 5rem;
+    }
+
+    p {
+        margin: 2rem;
+        font-size: 1.2rem;
+    }
+
+    button {
+        margin: 3rem 0 0 0;
+    }
+}
+
+/* SECTION STYLES */
+.Designed {
+    @include Flex;
+    justify-content: center;
+    padding: 0 2rem;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+.Designed-header {
+    text-align: center;
+    font-size: 2rem;
+    margin: 3rem 0 0px 0;
+    color: var(--Very-dark-blue-headings);
+}
+
+.Designed-left {
+    position: relative;
+    width: 60%;
+
+    overflow: hidden;
+
+    article {
+        margin: 3rem;
+    }
+    h3 {
+        margin: 2rem 0;
+        font-size: 1.5rem;
+        font-weight: bolder;
+        color: var(--Very-dark-blue-headings);
+    }
+    p {
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+        color: var(--Very-dark-gray-blue);
+    }
+}
+
+.Designed-right {
+    position: relative;
+    width: 40%;
+    img {
+        width: 150%;
+    }
+}
+
+.State-art {
+    @include Flex;
+    justify-content: center;
+
+    background-image: url("../images/bg-pattern-circles.svg");
+    background-repeat: no-repeat;
+    background-position: -200px -550px;
+    background-color: hsl(237, 17%, 21%);
+    color: white;
+    height: 430px;
+    border-radius: 0 100px;
+    padding: 2rem;
+    margin: 5rem 0;
+    
+    img {
+        width: 100%;
+        
+    }
+    article {
+        position: relative;
+        width: 50%;
+    }
+
+    h3 {
+        margin: 2rem 0;
+        font-size: 2rem;
+        font-weight: bolder;
+    }
+
+    p {
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+    }
+}
+
+
+.section-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-2-left,
+.section-2-right {
+    width: 50%;
+}
+
+.section-2-left img {
+    width: 150%;
+    position: relative;
+    left: -300px;
+}
+
+.section-2-right {
+    article {
+        margin: 3rem;
+
+        h3 {
+            margin: 2rem 0;
+            font-size: 1.6rem;
+            font-weight: bolder;
+            color: var(--Very-dark-blue-headings);
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.8rem;
+            color: var(--Very-dark-gray-blue);
+            width: 100%;
+        }
+    }
+}
+
+/* FOOTER STYLES */
+
+footer {
+    background-color: var(--Very-dark-black-blue-footer-background);
+    color: var(--White-text);
+    padding: 3rem 2rem;
+    @include Flex;
+    justify-content: space-evenly;
+    margin: 3rem 0 0 0;
+    padding: 2rem 0 5rem 0;
+    border-top-right-radius: 8rem;
+
+    img {
+        margin-top: 2rem;
+    }
+    h3 {
+        margin: 2rem 0;
+    }
+    p {
+        cursor: pointer;
+        margin: 1rem 0;
+    }
+}
+
+.attribution {
+    font-size: 14px;
+    text-align: center;
+    background-color: var(--Very-dark-black-blue-footer-background);
+    color: var(--White-text);
+    padding-bottom: 1rem;
+
+    a {
+        color: hsl(228, 45%, 44%);
+    }
+}
+
+@import "_mobile";
